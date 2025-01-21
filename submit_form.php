@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([$firstName, $lastName, $email, $phone, $gender, $dob, $age, $hashedPassword, $imagePath]);
 
-        echo "Data submitted successfully!";
+        echo "Everything is fine!";
     } else {
         foreach ($errors as $error) {
             echo "<p>$error</p>";
